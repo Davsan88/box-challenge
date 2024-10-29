@@ -10,6 +10,9 @@ export default function App() {
      *    as an empty square (black border, transparent bg color)
      *    (Don't worry about using the "on" property yet)
      */
+    const [boxesArray, setBoxesArray] = React.useState(boxes)
+
+
     return (
         <main>
             <h1>Boxes will go here</h1>
