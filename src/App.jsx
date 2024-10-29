@@ -12,6 +12,10 @@ export default function App() {
      */
     const [boxesArray, setBoxesArray] = React.useState(boxes)
 
+    const boxElements = boxesArray.map((box) => (
+        <div key={box.id} className="box"></div>
+    ))
+
 
     return (
         <main>
