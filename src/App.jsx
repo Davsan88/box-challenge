@@ -1,5 +1,6 @@
 import React from "react"
 import boxes from "./boxes"
+import "./App.css"
 
 export default function App() {
     /**
