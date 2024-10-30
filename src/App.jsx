@@ -2,19 +2,19 @@ import React from "react"
 import boxes from "./boxes"
 import "./App.css"
 
-export default function App() {
-    /**
-     * Challenge part 1:
-     * 1. Initialize state with the default value of the
-     *    array pulled in from boxes.js
-     * 2. Map over that state array and display each one
-     *    as an empty square (black border, transparent bg color)
-     *    (Don't worry about using the "on" property yet)
-     */
+export default function App({ darkMode }) {
     const [boxesArray, setBoxesArray] = React.useState(boxes)
 
+     // Challenge: use a ternary to determine the backgroundColor.
+    // If darkMode is true, set it to "#222222"
+    // If darkMode is false, set it to "#cccccc"
+
+    const styles = {
+        backgroundColor: darkMode ? "#222222" : "#cccccc"
+    }
+
     const boxElements = boxesArray.map((box) => (
-        <div key={box.id} className="box"></div>
+        <div style={styles} key={box.id} className="box"></div>
     ))
 
 
