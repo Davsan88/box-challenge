@@ -6,11 +6,11 @@ const Box = ({ on }) => {
         backgroundColor: on ? "#222222" : "none"
     }
 
-  return (
-    <div style={styles} className="box">
-      
-    </div>
-  )
+    return (
+        <div style={styles} className="box">
+
+        </div>
+    )
 }
 
 export default Box
