@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 const Box = ({ on }) => {
     const [isOn, setIsOn] = useState(on)
 
-    const toggleColor = () => setColor(prevColor => !prevColor)
+    const toggleColor = () => setIsOn(prevIsOn => !prevIsOn)
 
     const styles = {
         backgroundColor: color ? "#222222" : "transparent"
