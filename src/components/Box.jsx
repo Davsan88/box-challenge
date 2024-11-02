@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 
 const Box = ({ on }) => {
+    const [color, setColor] = useState(on)
+
+    const toggleColor = () => setColor(prevColor => !prevColor)
+
     const styles = {
-        backgroundColor: on ? "#222222" : "transparent"
+        backgroundColor: color ? "#222222" : "transparent"
     }
 
     return (
-        <div style={styles} className="box">
-
+        <div onClick={toggleColor} style={styles} className="box">
+            
         </div>
     )
 }
