@@ -7,7 +7,7 @@ const Box = ({ on }) => {
     const toggleColor = () => setIsOn(prevIsOn => !prevIsOn)
 
     const styles = {
-        backgroundColor: color ? "#222222" : "transparent"
+        backgroundColor: isOn ? "#222222" : "transparent"
     }
 
     return (
