@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 
 const Box = ({ on }) => {
-    const [color, setColor] = useState(on)
+    const [isOn, setIsOn] = useState(on)
 
     const toggleColor = () => setColor(prevColor => !prevColor)
 
