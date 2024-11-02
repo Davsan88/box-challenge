@@ -3,7 +3,7 @@ import React from 'react'
 
 const Box = ({ on }) => {
     const styles = {
-        backgroundColor: on ? "#222222" : "none"
+        backgroundColor: on ? "#222222" : "transparent"
     }
 
     return (
