@@ -7,7 +7,10 @@ export default function App({ darkMode }) {
     const [boxesArray, setBoxesArray] = React.useState(boxes)
 
     const boxElements = boxesArray.map((box) => (
-        <Box key={box.id} on={box.on} />
+        <Box 
+            key={box.id} 
+            on={box.on} 
+        />
     ))
 
 
