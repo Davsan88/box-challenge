@@ -7,7 +7,7 @@ export default function App({ darkMode }) {
     const [boxesArray, setBoxesArray] = React.useState(boxes)
 
     const toggle = (id) => {
-        setBoxesArray(prevBoxes => prevBoxes.map(box =>
+        setBoxesArray(prevBoxes => prevBoxes.map(box => {
             if (box.id === id) {
                 return {
                     ...box,
