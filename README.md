@@ -24,3 +24,27 @@ const [boxesArray, setBoxesArray] = React.useState(boxes);
 ```
 
 **Purpose**: Store the initial state of all boxes, each with an `id` and an `on` property to indicate its current state.
+
+### 2. Render Boxes by Mapping over State
+
+**Action**: Map over `boxesArray` to create a list of `Box` components.
+
+```jsx
+// In App.jsx
+const boxElements = boxesArray.map((box) => (
+  <Box 
+    key={box.id} 
+    on={box.on} 
+    toggle={() => toggle(box.id)}
+  />
+));
+
+return (
+  <main>
+    {boxElements}
+  </main>
+);
+```
+
+**Purpose**: Dynamically generate `Box` components based on the current state, passing necessary props to each one.
+
