@@ -114,12 +114,12 @@ const toggle = (id) => {
 
 ### 7. Handle Click Events in Box Component
 
-**Action**: Attach the `onClick` event handler to the box's `div`.
+**Action**: Attach the `onClick` event handler to the box's `button`.
 
 ```jsx
 // In Box.jsx
 return (
-  <div onClick={toggle} style={styles} className="box"></div>
+  <button onClick={toggle} style={styles} className="box"></button>
 );
 ```
 
