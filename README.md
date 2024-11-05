@@ -161,4 +161,11 @@ setBoxesArray(prevBoxes => {
 
 **Purpose**: Define the visual layout and appearance of the boxes to ensure they display correctly on the page.
 
+### 10. Test the Application
+
+**Action**: Run the app and interact with the boxes.
+- Click on each box to toggle its state.
+- Observe the background color changing accordingly.
+
+**Purpose**: Verify that the application works as intended and that state updates are reflected in the UI.
 
