@@ -74,7 +74,7 @@ const styles = {
 };
 
 return (
-  <div onClick={toggle} style={styles} className="box"></div>
+  <button onClick={toggle} style={styles} className="box"></button>
 );
 ```
 
