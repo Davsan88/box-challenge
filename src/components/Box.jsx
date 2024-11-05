@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 
 const Box = ({ on, toggle }) => {
@@ -7,9 +7,9 @@ const Box = ({ on, toggle }) => {
     }
 
     return (
-        <div onClick={toggle} style={styles} className="box">
-            
-        </div>
+        <button 
+            onClick={toggle} style={styles} className="box">
+        </button>
     )
 }
 
