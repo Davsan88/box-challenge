@@ -9,7 +9,7 @@ export default function App({ darkMode }) {
     const toggle = (id) => {
         setBoxesArray(prevBoxes => {
             return prevBoxes.map(box => {
-                return box.id === id ? {...box, on: !box.on} : {...box}
+                return box.id === id ? {...box, on: !box.on} : box
             })
         })
     }
