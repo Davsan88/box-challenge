@@ -63,3 +63,20 @@ export default Box;
 
 **Purpose**: Encapsulate the logic and presentation of each box into a reusable component.
 
+### 4. Apply Dynamic Styles in Box Component
+
+**Action**: Use the `on` prop to determine the background color.
+
+```jsx
+// In Box.jsx
+const styles = {
+  backgroundColor: on ? "#222222" : "transparent"
+};
+
+return (
+  <div onClick={toggle} style={styles} className="box"></div>
+);
+```
+
+**Purpose**: Visually represent the box's state by changing its background color based on whether it is "on" or "off".
+
