@@ -140,4 +140,25 @@ setBoxesArray(prevBoxes => {
 
 **Purpose**: Maintain React's state immutability principles, which is crucial for predictable UI updates.
 
+### 9. Finalize the Styling
+
+**Action**: Add CSS styles for the boxes.
+
+```css
+/* In App.css */
+.box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  display: inline-block;
+  margin: 5px;
+}
+
+.box:active {
+  transform: none;
+}
+```
+
+**Purpose**: Define the visual layout and appearance of the boxes to ensure they display correctly on the page.
+
 
