@@ -8,7 +8,10 @@ const Box = ({ on, toggle }) => {
 
     return (
         <button 
-            onClick={toggle} style={styles} className="box">
+            onClick={toggle} 
+            style={styles} 
+            className="box"
+        >
         </button>
     )
 }
