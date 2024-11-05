@@ -80,3 +80,23 @@ return (
 
 **Purpose**: Visually represent the box's state by changing its background color based on whether it is "on" or "off".
 
+### 5. Implement the Toggle Function in App
+
+**Action**: Define the `toggle` function that updates the state immutably.
+
+```jsx
+// In App.jsx
+const toggle = (id) => {
+  setBoxesArray(prevBoxes => {
+    return prevBoxes.map(box => {
+      return box.id === id ? { ...box, on: !box.on } : box;
+    });
+  });
+};
+```
+
+**Purpose**: Update the `on` property of the clicked box while maintaining immutability by returning a new array and new box objects.
+
+
+
+
