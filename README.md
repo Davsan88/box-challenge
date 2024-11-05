@@ -48,3 +48,18 @@ return (
 
 **Purpose**: Dynamically generate `Box` components based on the current state, passing necessary props to each one.
 
+### 3. Create a Separate Box Component
+
+**Action**: Define the `Box` component in `Box.jsx`.
+
+```jsx
+// In Box.jsx
+const Box = ({ on, toggle }) => {
+  // Component code here
+};
+
+export default Box;
+```
+
+**Purpose**: Encapsulate the logic and presentation of each box into a reusable component.
+
