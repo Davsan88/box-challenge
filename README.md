@@ -169,3 +169,11 @@ setBoxesArray(prevBoxes => {
 
 **Purpose**: Verify that the application works as intended and that state updates are reflected in the UI.
 
+## Key Concepts and Takeaways
+
+- **State Management**: Managing state at the highest level needed (in `App.jsx`) ensures a single source of truth.
+- **Immutability**: Always return new objects and arrays when updating state to avoid direct mutations.
+- **Props and Event Handling**: Passing functions and data via props allows child components to interact with and update parent state.
+- **Component Reusability**: Creating separate components like `Box` promotes code reusability and cleaner organization.
+- **Conditional Rendering**: Using props to dynamically change the UI based on the component's state.
+
