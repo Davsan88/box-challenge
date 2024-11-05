@@ -177,3 +177,57 @@ setBoxesArray(prevBoxes => {
 - **Component Reusability**: Creating separate components like `Box` promotes code reusability and cleaner organization.
 - **Conditional Rendering**: Using props to dynamically change the UI based on the component's state.
 
+## Final Code Recap
+
+### App.jsx
+
+```jsx
+import React from "react";
+import boxes from "./boxes";
+import Box from "./components/Box";
+import "./App.css";
+
+export default function App() {
+  const [boxesArray, setBoxesArray] = React.useState(boxes);
+
+  const toggle = (id) => {
+    setBoxesArray(prevBoxes => {
+      return prevBoxes.map(box => {
+        return box.id === id ? { ...box, on: !box.on } : box;
+      });
+    });
+  };
+
+  const boxElements = boxesArray.map((box) => (
+    <Box 
+      key={box.id} 
+      on={box.on} 
+      toggle={() => toggle(box.id)}
+    />
+  ));
+
+  return (
+    <main>
+      {boxElements}
+    </main>
+  );
+}
+```
+
+### Box.jsx
+
+```jsx
+import React from 'react';
+
+const Box = ({ on, toggle }) => {
+  const styles = {
+    backgroundColor: on ? "#222222" : "transparent"
+  };
+
+  return (
+    <button onClick={toggle} style={styles} className="box"></button>
+  );
+};
+
+export default Box;
+```
