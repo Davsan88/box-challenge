@@ -125,5 +125,19 @@ return (
 
 **Purpose**: Allow user interaction by making the box clickable and triggering the state update in `App`.
 
+### 8. Ensure Immutability When Updating State
+
+**Action**: Use functional updates and the spread operator to avoid mutating state directly.
+
+```jsx
+// In App.jsx
+setBoxesArray(prevBoxes => {
+  return prevBoxes.map(box => {
+    return box.id === id ? { ...box, on: !box.on } : box;
+  });
+});
+```
+
+**Purpose**: Maintain React's state immutability principles, which is crucial for predictable UI updates.
 
 
