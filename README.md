@@ -97,6 +97,20 @@ const toggle = (id) => {
 
 **Purpose**: Update the `on` property of the clicked box while maintaining immutability by returning a new array and new box objects.
 
+### 6. Pass the Toggle Function to Box Components
+
+**Action**: Modify the `toggle` prop to include the box's id.
+
+```jsx
+// In App.jsx
+<Box 
+  key={box.id} 
+  on={box.on} 
+  toggle={() => toggle(box.id)}
+/>
+```
+
+**Purpose**: Ensure each `Box` component can trigger the `toggle` function with its specific `id` when clicked.
 
 
 
