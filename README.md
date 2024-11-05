@@ -231,3 +231,15 @@ const Box = ({ on, toggle }) => {
 
 export default Box;
 ```
+
+## Conclusion
+
+By incrementally building the Boxes App through these steps, I’ve practiced essential React skills:
+
+- **State Management**: Using `useState` to manage component state.
+- **Component Composition**: Breaking down the UI into reusable components.
+- **Event Handling**: Responding to user interactions to update state.
+- **Immutability**: Updating state in a way that preserves immutability, crucial for React's performance optimizations.
+
+This workflow demonstrates how to thoughtfully structure a React application, manage state effectively, and create interactive UIs.
+
