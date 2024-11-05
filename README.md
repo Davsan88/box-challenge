@@ -9,3 +9,18 @@
   - Component composition and props.
   - Event handling.
   - Immutability in state updates.
+
+## Step-by-Step Workflow
+
+### 1. Initialize State with Default Boxes Array
+
+**Action**: Import the default array of boxes and initialize state in `App.jsx`.
+
+```jsx
+// In App.jsx
+import boxes from "./boxes";
+
+const [boxesArray, setBoxesArray] = React.useState(boxes);
+```
+
+**Purpose**: Store the initial state of all boxes, each with an `id` and an `on` property to indicate its current state.
