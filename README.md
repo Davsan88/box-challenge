@@ -112,5 +112,18 @@ const toggle = (id) => {
 
 **Purpose**: Ensure each `Box` component can trigger the `toggle` function with its specific `id` when clicked.
 
+### 7. Handle Click Events in Box Component
+
+**Action**: Attach the `onClick` event handler to the box's `div`.
+
+```jsx
+// In Box.jsx
+return (
+  <div onClick={toggle} style={styles} className="box"></div>
+);
+```
+
+**Purpose**: Allow user interaction by making the box clickable and triggering the state update in `App`.
+
 
 
